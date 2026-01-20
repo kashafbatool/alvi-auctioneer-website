@@ -315,6 +315,7 @@
         /* News Section */
         .news-section {
             background: #fafafa;
+            padding-bottom: 80px;
         }
 
         .news-grid {
@@ -496,34 +497,27 @@
         }
 
         /* Facebook Upcoming Auctions */
-        .fb-auctions {
+        .news-grid.fb-auctions {
             display: flex;
             justify-content: center;
+            grid-template-columns: none;
         }
-        /* Facebook Upcoming Auctions */
-.fb-auctions {
-  display: flex;
-  justify-content: center;
-}
 
-.fb-wrap {
-  width: 520px;
-  min-height: 720px;
-}
+        .fb-wrap {
+            width: min(720px, 100%);
+            min-height: 720px;
+        }
 
-.fb-auctions {
-  display: flex;
-  justify-content: center;
-}
+        .fb-page,
+        .fb-page span,
+        .fb-page iframe {
+            width: 100% !important;
+        }
 
-.fb-wrap {
-  width: 700px;
-  min-height: 920px;
-}
-.news-grid.fb-auctions {
-  display: flex !important;
-  grid-template-columns: none !important;
-}
+        .fb-page iframe {
+            min-height: 720px;
+            border: 0;
+        }
 
 
     </style>
@@ -651,8 +645,8 @@
     <div class="fb-page"
       data-href="https://www.facebook.com/AlviAuctioneers"
       data-tabs="timeline"
-      data-width="700"
-      data-height="900"
+      data-width="720"
+      data-height="720"
       data-small-header="true"
       data-adapt-container-width="true"
       data-hide-cover="false"
